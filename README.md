@@ -15,10 +15,12 @@ We will be using:
 
 1. The NREL API:
 [Alternate fuel station - nearest station endpoint](https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest/)
+
 [Sign up for a key here](https://developer.nrel.gov/signup/)
 
 1. The Google Directions API:
 [endpoint](https://developers.google.com/maps/documentation/directions/start)
+
 [Sign up for a key here](https://cloud.google.com/maps-platform/?_ga=2.209001618.1254742974.1571934871-2016725719.1571934871&refresh=1#get-started)
 
 ```
