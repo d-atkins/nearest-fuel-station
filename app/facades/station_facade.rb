@@ -3,10 +3,8 @@ class StationFacade
     @location = location
   end
 
-  def get_station
+  def station
     station_data = NrelService.nearest_station(@location)
-    @station ||= station_data.map do |station_info|
-      Station.new(station_info)
-    end
+    @station ||= Station.new(station_data)
   end
 end
