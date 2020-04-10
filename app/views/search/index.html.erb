@@ -1,6 +1,10 @@
 <section id='station'>
-  <p>Name: <%= @station_facade.station.name %></p>
-  <p>Address: <%= @station_facade.station.address %></p>
-  <p>Fuel type: <%= @station_facade.station.fuel_type %></p>
-  <p>Access times: <%= @station_facade.station.access_times %></p>
+  <h3>Name</h3>
+  <p class='name'><%= @station_facade.station.name %></p>
+  <h3>Address</h3>
+  <p class='address'><%= @station_facade.station.address %></p>
+  <h3>Fuel type</h3>
+  <p class='fuel-type'><%= @station_facade.station.fuel_type %></p>
+  <h3>Access times</h3>
+  <p class='access-times'><%= @station_facade.station.access_times %></p>
 </section>
