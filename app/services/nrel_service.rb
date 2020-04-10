@@ -5,7 +5,7 @@ class NrelService
       req.params['fuel_type'] = 'ELEC'
       req.params['limit'] = '1'
     end
-    JSON.parse(response.body, symbolize_names: true)[:fuel_stations]
+    JSON.parse(response.body, symbolize_names: true)[:fuel_stations].first
   end
 
   def self.conn
