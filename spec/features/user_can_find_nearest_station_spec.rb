@@ -7,7 +7,12 @@ describe "user can visit the welcome page" do
     click_button "Find Nearest Station"
 
     expect(current_path).to eq('/search')
-    expect(page).to have_css('#station')
+    within('#station') do
+      expect(first('.name').text).to_not be_empty
+      expect(first('.address').text).to_not be_empty
+      expect(first('.fuel-type').text).to_not be_empty
+      expect(first('.access-times').text).to_not be_empty
+    end
   end
 end
 
