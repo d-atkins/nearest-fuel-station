@@ -3,28 +3,41 @@ class StationFacade
     @location = location
   end
 
-  def station
-    station_data = NrelService.nearest_station(@location)
-    @station ||= Station.new(station_data)
+  def name
+    station.name
+  end
+
+  def address
+    station.address
+  end
+
+  def fuel_type
+    station.fuel_type
+  end
+
+  def access_times
+    station.access_times
   end
 
   def distance
-    map_json[:distance][:text]
+    map.distance
   end
 
   def travel_time
-    map_json[:duration][:text]
+    map.travel_time
   end
 
   def directions
-    map_json[:steps].map do |direction_data|
-      direction_data[:html_instructions]
-    end
+    map.directions
   end
 
   private
 
-    def map_json
-      @map_data ||= MapService.directions(@location, @station.address)
+    def station
+      @station ||= Station.new(NrelService.nearest_station(@location))
+    end
+
+    def map
+      @map ||= Map.new(MapService.directions(@location, @station.address))
     end
 end
