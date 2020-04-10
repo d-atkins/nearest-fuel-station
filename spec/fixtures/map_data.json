@@ -1,0 +1,71 @@
+{
+   "distance": {
+      "text": "0.1 mi",
+      "value": 235
+   },
+   "duration": {
+      "text": "1 min",
+      "value": 73
+   },
+   "end_address": "17th Street Plaza, 1225 17th St, Denver, CO 80202, USA",
+   "end_location": {
+      "lat": 39.7497894,
+      "lng": -104.9948971
+   },
+   "start_address": "1331 17th St LL100, Denver, CO 80202, USA",
+   "start_location": {
+      "lat": 39.7506258,
+      "lng": -104.9968234
+   },
+   "steps": [
+      {
+         "distance": {
+            "text": "0.1 mi",
+            "value": 183
+         },
+         "duration": {
+            "text": "1 min",
+            "value": 50
+         },
+         "end_location": {
+            "lat": 39.7494563,
+            "lng": -104.9953195
+         },
+         "html_instructions": "Head <b>southeast</b> on <b>17th St</b> toward <b>Larimer St</b>",
+         "polyline": {
+            "points": "mxrqFbez_S@?Va@hAyAdCoD"
+         },
+         "start_location": {
+            "lat": 39.7506258,
+            "lng": -104.9968234
+         },
+         "travel_mode": "DRIVING"
+      },
+      {
+         "distance": {
+            "text": "171 ft",
+            "value": 52
+         },
+         "duration": {
+            "text": "1 min",
+            "value": 23
+         },
+         "end_location": {
+            "lat": 39.7497894,
+            "lng": -104.9948971
+         },
+         "html_instructions": "Turn <b>left</b> onto <b>Lawrence St</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+         "maneuver": "turn-left",
+         "polyline": {
+            "points": "cqrqFv{y_S_AsAA?"
+         },
+         "start_location": {
+            "lat": 39.7494563,
+            "lng": -104.9953195
+         },
+         "travel_mode": "DRIVING"
+      }
+   ],
+   "traffic_speed_entry": [],
+   "via_waypoint": []
+}
