@@ -1,3 +1,4 @@
+<h2>Station Info</h2>
 <section id='station'>
   <h3>Name</h3>
   <p class='name'><%= @station_facade.station.name %></p>
@@ -7,4 +8,18 @@
   <p class='fuel-type'><%= @station_facade.station.fuel_type %></p>
   <h3>Access times</h3>
   <p class='access-times'><%= @station_facade.station.access_times %></p>
+</section><br>
+
+<h2>Directions</h2>
+<section id='map-info'>
+  <h3>Distance</h3>
+  <p class='distance'><%= @station_facade.distance %></p>
+  <h3>Travel Time</h3>
+  <p class='travel-time'><%= @station_facade.travel_time %></p>
+  <h3>Directions</h3>
+  <div class='directions'>
+    <% @station_facade.directions.each do |direction| %>
+      <p><%= direction.html_safe %></p>
+    <% end %>
+  </div>
 </section>
